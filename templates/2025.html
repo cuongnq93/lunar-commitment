@@ -3,25 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello World 2025</title>
+  <title>Lunar Commitment 2025 - Year of the Snake</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes slither {
+      0%, 100% { transform: translateX(0) scaleX(1); }
+      25% { transform: translateX(4px) scaleX(1.05); }
+      75% { transform: translateX(-4px) scaleX(0.95); }
+    }
+    .animate-slither { animation: slither 3s ease-in-out infinite; }
+  </style>
 </head>
-<body class="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+<body class="flex items-center justify-center min-h-screen bg-gradient-to-br from-emerald-800 via-green-700 to-teal-600">
 
-<div class="text-center bg-white bg-opacity-20 p-10 rounded-2xl shadow-2xl backdrop-blur-lg">
-  <h1 class="text-4xl font-extrabold text-white drop-shadow-lg">Hello, World!</h1>
-  <p class="text-lg text-gray-200 mt-2">Chào Ất Tỵ - 2025</p>
-
-  <button class="mt-5 px-6 py-3 text-lg font-bold text-white bg-blue-600 rounded-full shadow-lg
-                       hover:bg-blue-700 hover:scale-110 transition-all duration-300">
-    Nhấn vào đây
-  </button>
-
-  <div class="mt-5 flex justify-center space-x-4">
-    <div class="w-10 h-10 bg-yellow-400 rounded-full animate-bounce"></div>
-    <div class="w-10 h-10 bg-green-400 rounded-full animate-bounce delay-200"></div>
-    <div class="w-10 h-10 bg-red-400 rounded-full animate-bounce delay-400"></div>
+<div class="text-center max-w-lg mx-4">
+  <!-- Firecrackers -->
+  <div class="flex justify-center gap-6 mb-6">
+    <div class="text-4xl animate-pulse">🧨</div>
+    <div class="text-4xl animate-pulse" style="animation-delay: 0.4s">✨</div>
+    <div class="text-4xl animate-pulse" style="animation-delay: 0.8s">🧨</div>
   </div>
+
+  <!-- Main Card -->
+  <div class="bg-white/15 p-10 rounded-3xl shadow-2xl backdrop-blur-lg border border-white/20">
+    <!-- Snake Icon -->
+    <div class="text-7xl mb-4 animate-slither">🐍</div>
+
+    <h1 class="text-4xl font-extrabold text-white drop-shadow-lg mb-1">
+      Happy Lunar New Year!
+    </h1>
+
+    <p class="text-xl text-emerald-200 font-semibold">
+      Year of the Snake — 2025
+    </p>
+
+    <div class="mt-4 text-white/80 text-sm space-y-1">
+      <p>At Ty · 乙巳</p>
+      <p class="text-emerald-100/70 text-xs">The Snake symbolizes wisdom, intuition, and elegance</p>
+    </div>
+
+    <!-- Divider -->
+    <div class="my-6 h-px bg-gradient-to-r from-transparent via-emerald-300/50 to-transparent"></div>
+
+    <!-- Wishes -->
+    <div class="grid grid-cols-3 gap-3 text-sm">
+      <div class="bg-white/10 rounded-xl p-3">
+        <div class="text-2xl mb-1">🎋</div>
+        <p class="text-emerald-100 font-medium">Wisdom</p>
+      </div>
+      <div class="bg-white/10 rounded-xl p-3">
+        <div class="text-2xl mb-1">💰</div>
+        <p class="text-emerald-100 font-medium">Prosperity</p>
+      </div>
+      <div class="bg-white/10 rounded-xl p-3">
+        <div class="text-2xl mb-1">❤️</div>
+        <p class="text-emerald-100 font-medium">Harmony</p>
+      </div>
+    </div>
+
+    <!-- First Commit Badge -->
+    <div class="mt-6 inline-flex items-center gap-2 bg-emerald-500/20 border border-emerald-400/30 rounded-full px-4 py-2 text-emerald-200 text-sm">
+      <span>🚀</span>
+      <span>First commit of 2025</span>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <p class="mt-6 text-white/50 text-xs">
+    lunar-commitment · a tradition since 2025
+  </p>
 </div>
 
 </body>
